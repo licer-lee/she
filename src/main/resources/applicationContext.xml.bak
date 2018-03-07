@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:cache="http://www.springframework.org/schema/cache" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd
+    http://www.springframework.org/schema/jdbc
+    http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd
+    http://www.springframework.org/schema/cache
+    http://www.springframework.org/schema/cache/spring-cache-4.0.xsd
+    http://www.springframework.org/schema/mvc 
+    http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd 
+    http://www.springframework.org/schema/task/
+    http://www.springframework.org/schema/task/spring-task-4.0.xsd">
+	<!-- 配置在beans标签内 -->
+	<!-- default-lazy-init="true" default-autowire="byName" -->
+
+
+	<!-- 启用spring注解 -->
+	<mvc:annotation-driven />
+	<!-- 扫描带指定包下的注解对象 -->
+	<context:component-scan base-package="tk.licer.*" />
+
+	<!-- 该 BeanPostProcessor 将自动对标注 @Autowired 的 Bean 进行注入 -->
+	<!-- <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" 
+		/> -->
+
+	<!-- 启用aop自动代理(注解用) -->
+	<aop:aspectj-autoproxy />
+
+	<!-- 初始化自定义拦截器 -->
+	<bean id="MyIntercepter4XML" class="tk.licer.util.aop.MyIntercepter4XML"></bean>
+	<!-- XML方式织入逻辑 -->
+	<!-- <aop:config> <aop:aspect id="MyIntercepter4XML" ref="MyIntercepter4XML"> 
+		<aop:before method="befor" pointcut="execution(public * tk.licer.service..*.*(..))" 
+		/> </aop:aspect> </aop:config> -->
+
+
+	<!-- 声明一个属性占位符配置器(从配置文件读取jdbc信息) -->
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<value>classpath:jdbc.properties</value>
+		</property>
+	</bean>
+
+	<!-- 声明数据源对象 dbcp -->
+	<bean id="myDataSource" destroy-method="close"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="${jdbc.driverClassName}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+	</bean>
+
+	<!-- 初始化sessionFactory -->
+	<bean id="sf"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="myDataSource" />
+		<property name="packagesToScan">
+			<list>
+				<value>tk.licer.model</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+
+				<!-- 数据库方言 -->
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+					<!-- org.hibernate.dialect.Oracle10gDialect -->
+				</prop>
+
+				<!-- mysql:设置自动重连.(如果连接闲置8小时 (8小时内没有进行数据库操作), mysql就会自动断开连接) -->
+				<prop key="connection.autoReconnect">true</prop>
+				<prop key="connection.autoReconnectForPools">true</prop>
+				<prop key="connection.is-connection-validation-required">true</prop>
+
+
+				<!-- 自动建表 -->
+				<!-- <prop key="hbm2ddl.auto">create</prop> -->
+
+				<!-- 显示sql -->
+				<prop key="hibernate.show_sql">true</prop>
+
+				<!-- 格式化sql -->
+				<prop key="hibernate.format_sql">true</prop>
+
+				<!-- 重要: 使用连接池设置false -->
+				<prop key="hibernate.temp.use_jdbc_metadata_defaults">false</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- hibernateTemplate -->
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate4.HibernateTemplate">
+		<property name="sessionFactory" ref="sf"></property>
+	</bean>
+
+	<!-- 事物管理 -->
+	<bean id="txManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sf" />
+	</bean>
+
+	<aop:config>
+		<aop:pointcut id="bussinessService"
+			expression="execution(public * tk.licer.service.impl.*.*(..))" />
+		<aop:advisor pointcut-ref="bussinessService" advice-ref="txAdvice" />
+	</aop:config>
+
+	<tx:advice id="txAdvice" transaction-manager="txManager">
+		<tx:attributes>
+			<tx:method name="exists" read-only="true" />
+			<tx:method name="add*" propagation="REQUIRED" />
+			<tx:method name="del*" propagation="REQUIRED" />
+		</tx:attributes>
+	</tx:advice>
+
+	<!-- 对静态资源文件的访问 不支持访问WEB-INF目录 -->
+	<mvc:default-servlet-handler />
+
+	<!-- 对静态资源文件的访问 支持访问WEB-INF目录 -->
+	<!-- <mvc:resources location="/uikit-2.3.1/" mapping="/uikit-2.3.1/**" /> -->
+
+</beans>
