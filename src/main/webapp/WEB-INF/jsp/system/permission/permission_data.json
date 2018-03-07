@@ -1,0 +1,441 @@
+{
+	"total": 87,
+	"rows": [
+		{
+			"permissionID": "FI-SW-01",
+			"permissionCode": "FI-SW-01",
+			"permissionName": "Koi",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "K9-DL-01",
+			"permissionName": "Dalmation",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "RP-SN-01",
+			"permissionName": "Rattlesnake",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "RP-SN-01",
+			"permissionName": "Rattlesnake",
+			"isPublic": "M"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "RP-LI-02",
+			"permissionName": "Iguana",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "FL-DSH-01",
+			"permissionName": "Manx",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "FL-DSH-01",
+			"permissionName": "Manx",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "FL-DLH-02",
+			"permissionName": "Persian",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "FL-DLH-02",
+			"permissionName": "Persian",
+			"isPublic": "M"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "M"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "M"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}, {
+			"permissionID": "FI-SW-01",
+			"permissionCode": "AV-CB-01",
+			"permissionName": "Amazon Parrot",
+			"isPublic": "P"
+		}
+	]
+}

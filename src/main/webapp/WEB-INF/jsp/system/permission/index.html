@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>权限首页</title>
+	</head>
+
+	<body>
+		<div class="easyui-layout" style="width: 100%; height: 100%;">
+
+			<!--条件区域-->
+			<div data-options="region:'west', title:'检索条件' " style="width: 250px; height: 100%; padding: 5px;">
+
+				<table style="width: 100%; border-collapse: collapse;" border="1">
+
+					<tr>
+						<td style="height: 40px; background-color: rgb(238, 238, 238);" align="right">权限编号</td>
+						<td width="100px" height="10">
+							<input type="text" id="condition_permission_id_input"> </td>
+					</tr>
+					<tr>
+						<td style="height: 40px; background-color: rgb(238, 238, 238);" align="right">权限名称</td>
+						<td height="10">
+							<input type="text" id="condition_permission_name_input">
+						</td>
+					</tr>
+					<tr>
+						<td style="height: 50px;" colspan="2">
+							<div id="condition_btn_div" style="text-align: center;">
+								<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-search'" onclick="searchPermission();return false;">检索</a> &nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-redo'" onclick="resetPermission();return false;">重置</a>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<!--列表区域-->
+			<div data-options="region:'center' " style="width: 100%; height: 100%;">
+				<table id="permission_list_table" class="easyui-datagrid" title="权限列表" style="width:100%;height:100%" data-options="collapsible:false, pagination: true, rownumbers:true, pageSize:30,pageList: [30, 50, 100] ">
+					<thead>
+						<tr>
+							<th data-options="field:'permissionID',width:100, align:'center', sortable:true ">权限ID</th>
+							<th data-options="field:'permissionCode',width:100, align:'center', sortable:true ">权限编号</th>
+							<th data-options="field:'permissionName',width:200, align:'center' ">权限名称</th>
+							<th data-options="field:'isPublic',width:80, align:'center' ">是否公共权限</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+
+		<!-- 权限popup_div -->
+		<div id="permission_popup_div"></div>
+
+		<!-- tips：permission.js必须引入在body内才能被加载 -->
+		<script type="text/javascript" src="/EasyUIProject/js/system/permission.js"></script>
+	</body>
+
+</html>
